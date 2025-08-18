@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Oxanium', cursive;
 }
 
 body {
@@ -16,20 +17,24 @@ body {
 
 .pokemonHub1{
     position: absolute;
-    right: 40%;
-    top: 12%;
+    right:50%;
+    top: 1%;
+    width: 11em;
 }
 
 .pokemonImage1{
     position: absolute;
     left: 0;
     bottom: 50%;
-    left: 69%;
-    height: ;
+    left: 73%;
+    width: 15%;
+    height: auto;
+    transform: translate(-70%,20%);
 }
 
-.pokemonFront{
-
+.pokemonData1{
+    font-size: 1.5em;
+    text-transform: capitalize;
 }
 
 .inputSearch1{
@@ -67,4 +72,123 @@ body {
     font-size: 0.9rem;
 }
 
+/* Dispositivos muito pequenos (celulares antigos) */
+/* @media (max-width: 320px) { 
+        .pokemonHub1{
+        right:60%;
+        top: 10%;
+        width: 11em;
+    }
+
+    .pokemonImage1{
+        left: 0;
+        bottom: 50%;
+        left: 73%;
+        width: 8%;
+        height: auto;
+    }
+
+    .pokemonData1{
+        font-size: 1.5em;
+    }
+} */
+
+/* Celulares padrão (iPhone, Android etc.) */
+/* @media (min-width: 480px) { 
+        .pokemonHub1{
+        right:40%;
+        top: 10%;
+        width: 11em;
+    }
+
+    .pokemonImage1{
+        left: 0;
+        bottom: 50%;
+        left: 73%;
+        height: auto;
+        width: 30%;
+        transform: translate(-40%,30%);
+
+    }
+
+    .pokemonData1{
+        font-size: 1.5em;
+    }
+} */
+
+/* Celulares grandes / tablets pequenos em pé */
+/* @media (min-width: 768px) { 
+    .pokemonHub1{
+        right:45%;
+        top: 10%;
+        width: 13em;
+    }
+
+    .pokemonImage1{
+        left: 0;
+        bottom: 50%;
+        left: 65%;
+        width: 25%;
+        height: auto;
+        transform: translate(-20%,30%);
+    }
+
+    .pokemonData1{
+        font-size: 1.5em;
+    }
+} */
+
+/* Tablets grandes / notebooks pequenos */
+/* @media (min-width: 1024px) { 
+    .pokemonHub1{
+        right:45%;
+        top: 10%;
+        width: 10em;
+    }
+
+    .pokemonImage1{
+        left: 0;
+        bottom: 50%;
+        left: 65%;
+        width: 20%;
+        height: auto;
+        transform: translate(-10%,10%);
+    }
+
+    .pokemonData1{
+        font-size: 1.5em;
+    }
+} */
+
+/* Laptops / desktops comuns */
+/* @media (min-width: 1280px) { 
+    .pokemonHub1{
+        right:45%;
+        top: 10%;
+        width: 13em;
+    }
+
+    .pokemonImage1{
+        left: 0;
+        bottom: 50%;
+        left: 65%;
+        width: 20%;
+        height: auto;
+        transform: translate(-20%,20%);
+    }
+
+    .pokemonData1{
+        font-size: 1.5em;
+    }
+} */
+
+/* Monitores grandes (full HD) */
+/* @media (min-width: 1440px) { 
+
+} */
+
+/* Telas muito grandes (2K, 4K) */
+/* @media (min-width: 1920px) {
+
+ } */
 
