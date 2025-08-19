@@ -15,29 +15,50 @@ body {
     background-size: cover;
 }
 
-.pokemonHub1{
+.pokemonHub1, .pokemonHub2{
+    width: 11em;
     position: absolute;
+}
+
+.pokemonHub1{
     right:50%;
     top: 1%;
-    width: 11em;
+    transform: translate(0%,40%);
+}
+
+.pokemonHub2{
+    right:5%;
+    bottom: 30%;
+    transform: translate(0%,40%);
+}
+
+.pokemonImage1,.pokemonImage2 {
+    position: absolute;
+    
 }
 
 .pokemonImage1{
-    position: absolute;
-    left: 0;
-    bottom: 50%;
     left: 73%;
-    width: 15%;
+    bottom: 45%;
+    width: 7em;
     height: auto;
-    transform: translate(-70%,20%);
+    transform: translate(-50%, 0); 
 }
 
-.pokemonData1{
+.pokemonImage2{
+    left: 40%;
+    bottom: 20%;
+    width: 10em;
+    height: auto;
+    transform: translate(-50%, 0); 
+}
+
+.pokemonData1,.pokemonData2{
     font-size: 1.5em;
     text-transform: capitalize;
 }
 
-.inputSearch1{
+.inputSearch1,.inputSearch2{
     width: 100%;
     padding: 4%;
     outline: none;
