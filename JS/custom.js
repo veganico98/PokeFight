@@ -19,7 +19,7 @@ const type2 = document.querySelector('.pokemonType2');
 const type3 = document.querySelector('.pokemonType3');
 
 let searchPokemon1 = 1;
-let searchPokemon2 = 6;
+let searchPokemon2 = 1;
 
 const fetchPokemon = async (pokemon) => {
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}
@@ -41,8 +41,14 @@ const renderPokemonFront = async (pokemon) => {
     searchPokemon1 = data.id;
     input1.value = '';
 
-    type0.innerHTML = data.types[0].type.name;
-    type1.innerHTML = data.types[1].type.name;
+    if(data.types.length > 1){
+        type0.innerHTML = data.types[0].type.name;
+        type1.innerHTML = data.types[1].type.name;
+    }else{
+        type0.innerHTML = data.types[0].type.name;
+        type1.innerHTML = "";
+    }
+    
 }
 
 const renderPokemonBack = async (pokemon) => {
@@ -81,3 +87,21 @@ buttonNext1.addEventListener('click', () => {
     renderPokemonFront(searchPokemon1);
 })
 
+form2.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    renderPokemonBack(input2.value.toLowerCase());
+})
+
+buttonPrev2.addEventListener('click', () => {
+    searchPokemon2--;
+    if (searchPokemon2 < 1){
+        searchPokemon2 = 1;
+    }
+    renderPokemonBack(searchPokemon2);
+})
+
+buttonNext2.addEventListener('click', () => {
+    searchPokemon2++;
+    renderPokemonBack(searchPokemon2);
+})

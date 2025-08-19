@@ -56,6 +56,8 @@ body {
 .pokemonData1,.pokemonData2{
     font-size: 1.5em;
     text-transform: capitalize;
+    color: #d63838;
+    text-shadow: -3px 1px 0 #888, -5px 3px 0 #333;
 }
 
 .inputSearch1,.inputSearch2{
