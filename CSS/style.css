@@ -47,10 +47,10 @@ body {
 
 .pokemonImage2{
     left: 40%;
-    bottom: 20%;
+    bottom: 10%;
     width: 10em;
     height: auto;
-    transform: translate(-50%, 0); 
+    transform: translate(-70%, 0%); 
 }
 
 .pokemonData1,.pokemonData2{
