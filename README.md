@@ -24,4 +24,4 @@ avançar e retorceder para visualizar seus sprites da quinta geração, consider
 
 ## Preview
 
-<img src="img/pokedex - index.png" alt="Captura de tela do projeto">
+<img src="IMG/Index.png" alt="Captura de tela do projeto">
